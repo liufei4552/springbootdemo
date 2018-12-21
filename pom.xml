@@ -21,6 +21,12 @@
 	</properties>
 
 	<dependencies>
+        <!--热更新所需-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
         <!--jdbc所需的依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -126,6 +132,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+                <!--热更新所需-->
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
 			</plugin>
 		</plugins>
 	</build>
