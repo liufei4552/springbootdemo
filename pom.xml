@@ -21,7 +21,7 @@
 	</properties>
 
 	<dependencies>
-        <!--热更新所需-->
+        <!--热更新所需devtools会监听classpath下的文件变动-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>

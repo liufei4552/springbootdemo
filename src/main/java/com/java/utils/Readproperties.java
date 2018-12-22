@@ -28,34 +28,7 @@ public class Readproperties {
 	* 获取配置信息
 	*/
 	public String getProperties(String sign) {
-		InputStream in = getClass().getResourceAsStream("/config.properties");
-		Properties prop = new Properties();
-		String properties = "";
-		try {
-			prop.load(in);
-			properties = prop.getProperty(sign).toString();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				if (null != in) {
-					in.close();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-
-		return properties;
-	}
-
-	/**
-	 * 获取数据库名
-	 * @param sign
-	 * @return
-	 */
-	public  String getDatabaseName(String sign) {
-		InputStream in = getClass().getResourceAsStream("/db.properties");
+		InputStream in = getClass().getResourceAsStream("/application.properties");
 		Properties prop = new Properties();
 		String properties = "";
 		try {
