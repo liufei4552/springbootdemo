@@ -1,10 +1,13 @@
 package com.java.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.java.bean.User;
 import com.java.dao.UserDao;
 import com.java.service.UserService;
-import com.java.utils.LogUtil;
 import com.java.utils.Message;
+import com.java.utils.Page;
+import com.java.utils.Result;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,39 +24,51 @@ import java.util.List;
  * @Version: 1.0
  */
 @Service("UserServiceImpl")
-@Transactional(rollbackFor =RuntimeException.class )
+@Slf4j
+@Transactional(rollbackFor = RuntimeException.class)
 public class UserServiceImpl implements UserService {
-	@Autowired
-	private UserDao dao;
+    @Autowired
+    private UserDao dao;
 
-	@Override
-	public List<User> findAll() {
-		try {
-			return dao.findAll();
-		} catch (Exception e) {
-			LogUtil.getError(""+e);
-			return null;
-		}
-	}
+    @Override
+    public Result<Page<User>> findAll(Integer page,Integer pageSize) {
+        Result<Page<User>> result = new Result();
+        try {
+            Page<User> userPage = new Page<>();
+            com.github.pagehelper.Page pageHelper = PageHelper.startPage(page, pageSize);
+            List<User> userList = dao.findAll();
+            result.setCode("200");
+            result.setMsg("成功");
+            result.setSuccess(true);
+            userPage.setItems(userList);
+            userPage.setTotalNumber((int) pageHelper.getTotal());
+            userPage.setPageSize(pageHelper.getPageSize());
+            result.setData(userPage);
+            return result;
+        } catch (Exception e) {
+            log.error("" + e);
+            return null;
+        }
+    }
 
-	@Override
-	public int findCount() {
-		try {
-			return dao.findCount();
-		} catch (Exception e) {
-			LogUtil.getError(""+e);
-			return 0;
-		}
-	}
+    @Override
+    public int findCount() {
+        try {
+            return dao.findCount();
+        } catch (Exception e) {
+            log.error("" + e);
+            return 0;
+        }
+    }
 
-	@Override
-	public int login(String name, String pass) {
-		try {
-			dao.login(name, pass);
-			return Message.MESSAGE_SUCCESS;
-		} catch (Exception e) {
-			LogUtil.getError("登录失败:"+e);
-			return Message.MESSAGE_UNKNOWN;
-		}
-	}
+    @Override
+    public int login(String name, String pass) {
+        try {
+            dao.login(name, pass);
+            return Message.MESSAGE_SUCCESS;
+        } catch (Exception e) {
+            log.error("登录失败:" + e);
+            return Message.MESSAGE_UNKNOWN;
+        }
+    }
 }

@@ -1,15 +1,16 @@
 package com.java.controller;
 
+import com.java.bean.User;
 import com.java.service.UserService;
-import com.java.utils.LogUtil;
+import com.java.utils.Page;
+import com.java.utils.Result;
+import com.java.utils.StringUtile;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @ProjectName: springbootdemo
@@ -20,22 +21,35 @@ import javax.servlet.http.HttpServletResponse;
  * @Date: 2018/12/21 15:37
  * @Version: 1.0
  */
-@Controller
-@RequestMapping("user")
+@RestController
+@RequestMapping("/user")
+@Api(value = "/user", description = "用户信息api")
+@Slf4j
 public class UserController {
-	@Autowired
-	private UserService service;
+    @Autowired
+    private UserService service;
 
-	@RequestMapping("userLogin")
-	public String login(HttpServletRequest request){
-		try {
-			String userName=request.getParameter("name");
-			String password=request.getParameter("pass");
-			service.login(userName, password);
-			return "index";
-		} catch (Exception e) {
-			LogUtil.getError(""+e);
-			return "";
-		}
-	}
+    @RequestMapping(value = "userLogin", method = RequestMethod.POST)
+    @ApiOperation("登录")
+    public Result<Integer> login( @ApiParam("账号") @RequestParam(value = "name", required = true) String name, @ApiParam("密码") @RequestParam(value = "pass", required = true) String pass) {
+        Result result = new Result();
+        try {
+            int i = service.login(name, pass);
+            result = Result.success(i);
+            return result;
+        } catch (Exception e) {
+            log.error("" + e);
+            result = Result.fail("200", "未知错误！");
+            return result;
+        }
+    }
+
+    @RequestMapping(value = "getAllUser", method = RequestMethod.GET)
+    @ApiOperation("查询所有的用户信息")
+    public Result<Page<User>> getAllUser( @ApiParam("页数") @RequestParam(value = "page", required = false) String page, @ApiParam("每页数目") @RequestParam(value = "pageSize", required = false) String pageSize) {
+        if(StringUtile.isEmpty(page)|| StringUtile.isEmpty(pageSize)){
+            return Result.fail("500","参数不能为空");
+        }
+        return service.findAll(Integer.parseInt(page),Integer.parseInt(pageSize));
+    }
 }

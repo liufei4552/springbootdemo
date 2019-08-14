@@ -16,7 +16,21 @@
 
         <!-- 设置关联对象加载的形态，此处为按需加载字段(加载字段由SQL指 定)，不会加载关联表的所有字段，以提高性能 -->
         <setting name="aggressiveLazyLoading" value="true"/>
-        <!-- 打印查询语句 -->
-        <setting name="logImpl" value="STDOUT_LOGGING" />
+        <!-- 链路监控慢sql超时时间 -->
+        <!-- <setting name="slowSqlTimeout" value="1000"/>-->
+        <!-- 配置此项时，logback设置为debug时可以查看sql语句 -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
     </settings>
+    <!-- 分页插件 end-->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="dialect" value="mysql"/>
+            <property name="offsetAsPageNum" value="false"/>
+            <property name="rowBoundsWithCount" value="false"/>
+            <property name="pageSizeZero" value="true"/>
+            <property name="reasonable" value="false"/>
+            <property name="supportMethodsArguments" value="false"/>
+            <property name="returnPageInfo" value="none"/>
+        </plugin>
+    </plugins>
 </configuration>

@@ -1,6 +1,9 @@
 package com.java.service;
 
 import com.java.bean.User;
+import com.java.utils.Page;
+import com.java.utils.Result;
+import io.swagger.models.auth.In;
 
 import java.util.List;
 
@@ -21,7 +24,7 @@ public interface UserService {
 	 * @Param []
 	 * @return java.util.List<com.java.bean.User>
 	 **/
-	public List<User> findAll();
+	public Result<Page<User>> findAll(Integer page,Integer pageSize);
 	/**
 	 * @Author LiuFei
 	 * @Description  查询用户总数

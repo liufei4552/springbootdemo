@@ -30,10 +30,7 @@ public class UserServiceImplTest {
 	private UserService service;
 	@Test
 	public void findAll() {
-		List<User>list=service.findAll();
-		for (User user : list) {
-			System.out.println(user);
-		}
+
 	}
 
 	@Test

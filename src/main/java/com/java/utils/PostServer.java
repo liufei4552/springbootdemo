@@ -46,7 +46,6 @@ public class PostServer {
 			} catch (Exception e) {
 				map.put("res", -2);
 				json = JSONObject.fromObject(map);
-				LogUtil.getGMLog("连接服务器失败，请检查服务器是否已开启。");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -56,7 +55,6 @@ public class PostServer {
 				out.close();
 				httpConn.disconnect();
 			} catch (Exception e) {
-				LogUtil.getGMLog("输入流关闭失败。");
 			}
 		}
 		Gson gson = new Gson();

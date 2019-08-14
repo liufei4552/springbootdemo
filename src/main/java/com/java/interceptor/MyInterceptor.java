@@ -1,19 +1,14 @@
 package com.java.interceptor;
 
 
-import com.java.utils.Readproperties;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 @Component
 public class MyInterceptor implements HandlerInterceptor {
 	/*private FunctionService functionService;
@@ -43,7 +38,6 @@ public class MyInterceptor implements HandlerInterceptor {
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object arg2) throws Exception {
-		System.out.println("进入拦截器.............");
 		response.setContentType("text/html");
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
@@ -55,9 +49,6 @@ public class MyInterceptor implements HandlerInterceptor {
 		String uname = (String) session.getAttribute("username");
 		//获取当前请求的路径
 		String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();
-		if(uname!=null&&uname!=""){
-			response.sendRedirect(basePath + "/login");
-		}
 		//创建一个变量接收权限字符串
 		/*List<Function>list=new ArrayList<>();
 		if(!"".equals(uname)){
@@ -69,20 +60,20 @@ public class MyInterceptor implements HandlerInterceptor {
 			list1.add(list.get(i).getF_url());
 		}*/
 		//首先判断是否被登录
-		if (uname != null) {
+//		if (uname != null) {
 			//判断是否有权限访问
-			String string=str[str.length-2]+"/"+str[str.length-1];
+//			String string=str[str.length-2]+"/"+str[str.length-1];
 			/*if(list1.contains(string)==false){
 				response.setHeader("function", "false");
 				return false;
 			}else {
 			  return true;
 			}*/
-		}
+//		}
 		//重定向到login.html
-		redirect(request, response,basePath);
-		System.out.println("您无权访问.........");
-		return false;
+		//redirect(request, response,basePath);
+		//System.out.println("您无权访问.........");
+		return true;
 
 	}
 

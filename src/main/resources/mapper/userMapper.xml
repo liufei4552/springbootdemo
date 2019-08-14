@@ -5,14 +5,14 @@
 <mapper namespace="com.java.dao.UserDao">
     <!--查询所有用户信息-->
     <select id="findAll" resultType="com.java.bean.User">
-        SELECT * FROM user;
+        SELECT * FROM user
     </select>
     <!--查询用户总数-->
     <select id="findCount" resultType="int">
-      SELECT count(*) FROM user;
+      SELECT count(*) FROM user
     </select>
     <!--用户登录-->
     <select id="login" resultType="int">
-        SELECT count(*) FROM user WHERE username=#{0} AND password=#{1};
+        SELECT count(*) FROM user WHERE username=#{arg0} AND password=#{arg1}
     </select>
 </mapper>
