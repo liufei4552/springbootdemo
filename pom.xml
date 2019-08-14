@@ -108,6 +108,11 @@
             <artifactId>druid</artifactId>
             <version>${druid.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.14</version>
+        </dependency>
         <!--json依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -193,6 +198,11 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${springfox-swagger2-ui.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.java</groupId>
+            <artifactId>springbootdemo</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
