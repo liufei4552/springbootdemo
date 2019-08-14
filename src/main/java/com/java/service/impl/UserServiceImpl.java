@@ -1,6 +1,7 @@
 package com.java.service.impl;
 
 import com.github.pagehelper.PageHelper;
+import com.java.annotation.RedisCache;
 import com.java.bean.User;
 import com.java.dao.UserDao;
 import com.java.service.UserService;
@@ -31,7 +32,8 @@ public class UserServiceImpl implements UserService {
     private UserDao dao;
 
     @Override
-    public Result<Page<User>> findAll(Integer page,Integer pageSize) {
+    @RedisCache(redisKey = "userList", expireTime = 20)
+    public Result<Page<User>> findAll(Integer page, Integer pageSize) {
         Result<Page<User>> result = new Result();
         try {
             Page<User> userPage = new Page<>();

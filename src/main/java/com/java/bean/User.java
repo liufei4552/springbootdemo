@@ -1,5 +1,7 @@
 package com.java.bean;
 
+import java.io.Serializable;
+
 /**
  * @ProjectName: springbootdemo
  * @Package: com.java.bean
@@ -9,7 +11,7 @@ package com.java.bean;
  * @Date: 2018/12/21 14:33
  * @Version: 1.0
  */
-public class User {
+public class User implements Serializable{
 	/**
 	 * 索引
 	 */

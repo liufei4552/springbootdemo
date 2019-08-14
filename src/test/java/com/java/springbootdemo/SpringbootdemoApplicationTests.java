@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.java.bean.User;
 import com.java.dao.UserDao;
 import com.java.service.UserService;
+import com.java.utils.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,11 +22,13 @@ public class SpringbootdemoApplicationTests {
 	private UserService service;
 	@Autowired
 	private UserDao userDao;
+	@Autowired
+	private RedisUtil redisUtil;
 	@Test
 	public void contextLoads() {
-		com.github.pagehelper.Page pageHelper = PageHelper.startPage(1, 3);
+		com.github.pagehelper.Page page=PageHelper.startPage(1,10);
 		List<User>list=userDao.findAll();
-		log.info("测试:"+list);
+        System.out.println(redisUtil.lSet("userList",list,20));
 	}
 
 }
