@@ -1,0 +1,1632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Tue Aug 13 12:42:12 CST 2019</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:12.993</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">SpringJUnit4ClassRunner.java</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">139</td>
+<td class="Message">SpringJUnit4ClassRunner constructor called with [class com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.000</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">BootstrapUtils.java</td>
+<td class="MethodOfCaller">createCacheAwareContextLoaderDelegate</td>
+<td class="LineOfCaller">96</td>
+<td class="Message">Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.011</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">BootstrapUtils.java</td>
+<td class="MethodOfCaller">createBootstrapContext</td>
+<td class="LineOfCaller">79</td>
+<td class="Message">Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.036</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">BootstrapUtils.java</td>
+<td class="MethodOfCaller">resolveTestContextBootstrapper</td>
+<td class="LineOfCaller">132</td>
+<td class="Message">Instantiating TestContextBootstrapper for test class [com.java.springbootdemo.SpringbootdemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">20190813:12:42:13.051</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">buildDefaultMergedContextConfiguration</td>
+<td class="LineOfCaller">308</td>
+<td class="Message">Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.java.springbootdemo.SpringbootdemoApplicationTests], using SpringBootContextLoader</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.055</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractContextLoader.java</td>
+<td class="MethodOfCaller">generateDefaultLocations</td>
+<td class="LineOfCaller">258</td>
+<td class="Message">Did not detect default resource location for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: class path resource [com/java/springbootdemo/SpringbootdemoApplicationTests-context.xml] does not exist</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.056</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractContextLoader.java</td>
+<td class="MethodOfCaller">generateDefaultLocations</td>
+<td class="LineOfCaller">258</td>
+<td class="Message">Did not detect default resource location for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: class path resource [com/java/springbootdemo/SpringbootdemoApplicationTestsContext.groovy] does not exist</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">20190813:12:42:13.056</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractContextLoader.java</td>
+<td class="MethodOfCaller">generateDefaultLocations</td>
+<td class="LineOfCaller">264</td>
+<td class="Message">Could not detect default resource locations for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">20190813:12:42:13.058</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AnnotationConfigContextLoaderUtils.java</td>
+<td class="MethodOfCaller">detectDefaultConfigurationClasses</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Could not detect default configuration classes for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: SpringbootdemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.117</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ActiveProfilesUtils.java</td>
+<td class="MethodOfCaller">resolveActiveProfiles</td>
+<td class="LineOfCaller">79</td>
+<td class="Message">Could not find an &#39;annotation declaring class&#39; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.232</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ClassPathScanningCandidateComponentProvider.java</td>
+<td class="MethodOfCaller">scanCandidateComponents</td>
+<td class="LineOfCaller">437</td>
+<td class="Message">Identified candidate component class: file [E:\idea\springbootdemo\target\classes\com\java\SpringbootdemoApplication.class]</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">20190813:12:42:13.234</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">SpringBootTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getOrFindConfigurationClasses</td>
+<td class="LineOfCaller">247</td>
+<td class="Message">Found @SpringBootConfiguration com.java.SpringbootdemoApplication for test class com.java.springbootdemo.SpringbootdemoApplicationTests</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.378</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getTestExecutionListeners</td>
+<td class="LineOfCaller">125</td>
+<td class="Message">@TestExecutionListeners is not present for class [com.java.springbootdemo.SpringbootdemoApplicationTests]: using defaults.</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">20190813:12:42:13.379</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getDefaultTestExecutionListenerClassNames</td>
+<td class="LineOfCaller">248</td>
+<td class="Message">Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">20190813:12:42:13.402</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getTestExecutionListeners</td>
+<td class="LineOfCaller">177</td>
+<td class="Message">Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@503d687a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a370f4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2abf4075, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@770d3326, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4cc8eb05, org.springframework.test.context.transaction.TransactionalTestExecutionListener@51f116b8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@19d481b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1f97cf0d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@140c9f39, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4d910fd6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@26275bef, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7690781]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.405</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.406</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.419</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.419</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.421</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.421</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.421</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.422</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.428</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractDirtiesContextTestExecutionListener.java</td>
+<td class="MethodOfCaller">beforeOrAfterTestClass</td>
+<td class="LineOfCaller">142</td>
+<td class="Message">Before test class: context [DefaultTestContext@649bec2e testClass = SpringbootdemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@693fe6c9 testClass = SpringbootdemoApplicationTests, locations = &#39;{}&#39;, classes = &#39;{class com.java.SpringbootdemoApplication}&#39;, contextInitializerClasses = &#39;[]&#39;, activeProfiles = &#39;{}&#39;, propertySourceLocations = &#39;{}&#39;, propertySourceProperties = &#39;{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}&#39;, contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@17c1bced, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14ec4505, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13acb0d1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4f638935], resourceBasePath = &#39;src/main/webapp&#39;, contextLoader = &#39;org.springframework.boot.test.context.SpringBootContextLoader&#39;, parent = [null]], attributes = map[&#39;org.springframework.test.context.web.ServletTestExecutionListener.activateListener&#39; -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.429</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.429</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.453</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">TestPropertySourceUtils.java</td>
+<td class="MethodOfCaller">addInlinedPropertiesToEnvironment</td>
+<td class="LineOfCaller">245</td>
+<td class="Message">Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}</td>
+</tr>
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Tue Aug 13 12:42:13 CST 2019</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.637</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DeferredLog.java</td>
+<td class="MethodOfCaller">logTo</td>
+<td class="LineOfCaller">224</td>
+<td class="Message">Creating new Restarter for thread Thread[main,5,main]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.638</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ClasspathLoggingApplicationListener.java</td>
+<td class="MethodOfCaller">onApplicationEvent</td>
+<td class="LineOfCaller">56</td>
+<td class="Message">Application failed to start with classpath: [file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/lib/idea_rt.jar, file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/plugins/junit/lib/junit-rt.jar, file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/plugins/junit/lib/junit5-rt.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/charsets.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/deploy.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/access-bridge-64.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/cldrdata.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/dnsns.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/jaccess.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/jfxrt.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/localedata.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/nashorn.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunec.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunjce_provider.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunmscapi.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunpkcs11.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/zipfs.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/javaws.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jce.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jfr.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jfxswt.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jsse.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/management-agent.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/plugin.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/resources.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/rt.jar, file:/E:/idea/springbootdemo/target/test-classes/, file:/E:/idea/springbootdemo/target/classes/, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-devtools/2.1.1.RELEASE/spring-boot-devtools-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot/2.1.1.RELEASE/spring-boot-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-jdbc/2.1.1.RELEASE/spring-boot-starter-jdbc-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter/2.1.1.RELEASE/spring-boot-starter-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-logging/2.1.1.RELEASE/spring-boot-starter-logging-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar, file:/E:/JAVA/MavenCheyipai/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar, file:/E:/JAVA/MavenCheyipai/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar, file:/E:/JAVA/MavenCheyipai/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar, file:/E:/JAVA/MavenCheyipai/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-jdbc/5.1.3.RELEASE/spring-jdbc-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-tx/5.1.3.RELEASE/spring-tx-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-data-redis/2.1.1.RELEASE/spring-boot-starter-data-redis-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/data/spring-data-redis/2.1.3.RELEASE/spring-data-redis-2.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/data/spring-data-keyvalue/2.1.3.RELEASE/spring-data-keyvalue-2.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-oxm/5.1.3.RELEASE/spring-oxm-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-context-support/5.1.3.RELEASE/spring-context-support-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-web/2.1.1.RELEASE/spring-boot-starter-web-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-tomcat/2.1.1.RELEASE/spring-boot-starter-tomcat-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/apache/tomcat/embed/tomcat-embed-core/9.0.13/tomcat-embed-core-9.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/apache/tomcat/embed/tomcat-embed-el/9.0.13/tomcat-embed-el-9.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.13/tomcat-embed-websocket-9.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar, file:/E:/JAVA/MavenCheyipai/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar, file:/E:/JAVA/MavenCheyipai/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-expression/5.1.3.RELEASE/spring-expression-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-aop/2.1.1.RELEASE/spring-boot-starter-aop-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-aop/5.1.3.RELEASE/spring-aop-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/spring/boot/mybatis-spring-boot-starter/1.3.2/mybatis-spring-boot-starter-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/1.3.2/mybatis-spring-boot-autoconfigure-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-test/2.1.1.RELEASE/spring-boot-starter-test-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-test/2.1.1.RELEASE/spring-boot-test-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-test-autoconfigure/2.1.1.RELEASE/spring-boot-test-autoconfigure-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar, file:/E:/JAVA/MavenCheyipai/net/minidev/json-smart/2.3/json-smart-2.3.jar, file:/E:/JAVA/MavenCheyipai/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar, file:/E:/JAVA/MavenCheyipai/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, file:/E:/JAVA/MavenCheyipai/junit/junit/4.12/junit-4.12.jar, file:/E:/JAVA/MavenCheyipai/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar, file:/E:/JAVA/MavenCheyipai/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar, file:/E:/JAVA/MavenCheyipai/net/bytebuddy/byte-buddy/1.9.5/byte-buddy-1.9.5.jar, file:/E:/JAVA/MavenCheyipai/net/bytebuddy/byte-buddy-agent/1.9.5/byte-buddy-agent-1.9.5.jar, file:/E:/JAVA/MavenCheyipai/org/objenesis/objenesis/2.6/objenesis-2.6.jar, file:/E:/JAVA/MavenCheyipai/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/E:/JAVA/MavenCheyipai/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, file:/E:/JAVA/MavenCheyipai/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar, file:/E:/JAVA/MavenCheyipai/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-jcl/5.1.3.RELEASE/spring-jcl-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-test/5.1.3.RELEASE/spring-test-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar, file:/E:/JAVA/MavenCheyipai/com/alibaba/druid/1.1.12/druid-1.1.12.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-json/2.1.1.RELEASE/spring-boot-starter-json-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar, file:/E:/JAVA/MavenCheyipai/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar, file:/E:/JAVA/MavenCheyipai/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar, file:/E:/JAVA/MavenCheyipai/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar, file:/E:/JAVA/MavenCheyipai/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar, file:/E:/JAVA/MavenCheyipai/log4j/log4j/1.2.17/log4j-1.2.17.jar, file:/E:/JAVA/MavenCheyipai/javax/mail/mail/1.4.7/mail-1.4.7.jar, file:/E:/JAVA/MavenCheyipai/javax/activation/activation/1.1/activation-1.1.jar, file:/E:/JAVA/MavenCheyipai/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar, file:/E:/JAVA/MavenCheyipai/com/jcraft/jsch/0.1.53/jsch-0.1.53.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-thymeleaf/2.1.1.RELEASE/spring-boot-starter-thymeleaf-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.2.RELEASE/thymeleaf-extras-java8time-3.0.2.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, file:/E:/JAVA/MavenCheyipai/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, file:/E:/JAVA/MavenCheyipai/commons-lang/commons-lang/2.4/commons-lang-2.4.jar, file:/E:/JAVA/MavenCheyipai/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar, file:/E:/JAVA/MavenCheyipai/com/github/pagehelper/pagehelper/4.1.4/pagehelper-4.1.4.jar, file:/E:/JAVA/MavenCheyipai/com/github/jsqlparser/jsqlparser/0.9.5/jsqlparser-0.9.5.jar, file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/lib/idea_rt.jar]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.777</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ResourceBundleMessageInterpolator.java</td>
+<td class="MethodOfCaller">buildExpressionFactory</td>
+<td class="LineOfCaller">89</td>
+<td class="Message">Loaded expression factory via original TCCL</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.787</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">578</td>
+<td class="Message">HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.788</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">579</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.788</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">580</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:42:13.788</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">581</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:42:13.789</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">582</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.</td>
+</tr>
+
+<tr class="error even">
+<td class="Date">20190813:12:42:15.367</td>
+<td class="Thread">main</td>
+<td class="Level">ERROR</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="MethodOfCaller">reportFailure</td>
+<td class="LineOfCaller">858</td>
+<td class="Message">Application run failed</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@106:104 - no applicable action for [property], current ElementPath  is [[configuration][appender][encoder][layout][property]]
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:293)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:266)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:229)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+</td></tr>
+<tr class="error odd">
+<td class="Date">20190813:12:42:15.370</td>
+<td class="Thread">main</td>
+<td class="Level">ERROR</td>
+<td class="FileOfCaller">TestContextManager.java</td>
+<td class="MethodOfCaller">prepareTestInstance</td>
+<td class="LineOfCaller">250</td>
+<td class="Message">Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@503d687a] to prepare test instance [com.java.springbootdemo.SpringbootdemoApplicationTests@6e535154]</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.lang.IllegalStateException: Failed to load ApplicationContext
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+<br />Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@106:104 - no applicable action for [property], current ElementPath  is [[configuration][appender][encoder][layout][property]]
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:293)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:266)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:229)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 24 common frames omitted
+</td></tr>
+<tr class="debug even">
+<td class="Date">20190813:12:42:15.386</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractDirtiesContextTestExecutionListener.java</td>
+<td class="MethodOfCaller">beforeOrAfterTestClass</td>
+<td class="LineOfCaller">142</td>
+<td class="Message">After test class: context [DefaultTestContext@649bec2e testClass = SpringbootdemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@693fe6c9 testClass = SpringbootdemoApplicationTests, locations = &#39;{}&#39;, classes = &#39;{class com.java.SpringbootdemoApplication}&#39;, contextInitializerClasses = &#39;[]&#39;, activeProfiles = &#39;{}&#39;, propertySourceLocations = &#39;{}&#39;, propertySourceProperties = &#39;{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}&#39;, contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@17c1bced, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14ec4505, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13acb0d1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4f638935], resourceBasePath = &#39;src/main/webapp&#39;, contextLoader = &#39;org.springframework.boot.test.context.SpringBootContextLoader&#39;, parent = [null]], attributes = map[&#39;org.springframework.test.context.web.ServletTestExecutionListener.activateListener&#39; -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Tue Aug 13 12:48:53 CST 2019</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:53.978</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">SpringJUnit4ClassRunner.java</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">139</td>
+<td class="Message">SpringJUnit4ClassRunner constructor called with [class com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:53.983</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">BootstrapUtils.java</td>
+<td class="MethodOfCaller">createCacheAwareContextLoaderDelegate</td>
+<td class="LineOfCaller">96</td>
+<td class="Message">Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:53.991</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">BootstrapUtils.java</td>
+<td class="MethodOfCaller">createBootstrapContext</td>
+<td class="LineOfCaller">79</td>
+<td class="Message">Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.010</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">BootstrapUtils.java</td>
+<td class="MethodOfCaller">resolveTestContextBootstrapper</td>
+<td class="LineOfCaller">132</td>
+<td class="Message">Instantiating TestContextBootstrapper for test class [com.java.springbootdemo.SpringbootdemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">20190813:12:48:54.022</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">buildDefaultMergedContextConfiguration</td>
+<td class="LineOfCaller">308</td>
+<td class="Message">Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.java.springbootdemo.SpringbootdemoApplicationTests], using SpringBootContextLoader</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.028</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractContextLoader.java</td>
+<td class="MethodOfCaller">generateDefaultLocations</td>
+<td class="LineOfCaller">258</td>
+<td class="Message">Did not detect default resource location for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: class path resource [com/java/springbootdemo/SpringbootdemoApplicationTests-context.xml] does not exist</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.029</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractContextLoader.java</td>
+<td class="MethodOfCaller">generateDefaultLocations</td>
+<td class="LineOfCaller">258</td>
+<td class="Message">Did not detect default resource location for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: class path resource [com/java/springbootdemo/SpringbootdemoApplicationTestsContext.groovy] does not exist</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">20190813:12:48:54.029</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractContextLoader.java</td>
+<td class="MethodOfCaller">generateDefaultLocations</td>
+<td class="LineOfCaller">264</td>
+<td class="Message">Could not detect default resource locations for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">20190813:12:48:54.030</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AnnotationConfigContextLoaderUtils.java</td>
+<td class="MethodOfCaller">detectDefaultConfigurationClasses</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Could not detect default configuration classes for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: SpringbootdemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.083</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ActiveProfilesUtils.java</td>
+<td class="MethodOfCaller">resolveActiveProfiles</td>
+<td class="LineOfCaller">79</td>
+<td class="Message">Could not find an &#39;annotation declaring class&#39; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.197</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ClassPathScanningCandidateComponentProvider.java</td>
+<td class="MethodOfCaller">scanCandidateComponents</td>
+<td class="LineOfCaller">437</td>
+<td class="Message">Identified candidate component class: file [E:\idea\springbootdemo\target\classes\com\java\SpringbootdemoApplication.class]</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">20190813:12:48:54.199</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">SpringBootTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getOrFindConfigurationClasses</td>
+<td class="LineOfCaller">247</td>
+<td class="Message">Found @SpringBootConfiguration com.java.SpringbootdemoApplication for test class com.java.springbootdemo.SpringbootdemoApplicationTests</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.314</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getTestExecutionListeners</td>
+<td class="LineOfCaller">125</td>
+<td class="Message">@TestExecutionListeners is not present for class [com.java.springbootdemo.SpringbootdemoApplicationTests]: using defaults.</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">20190813:12:48:54.314</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getDefaultTestExecutionListenerClassNames</td>
+<td class="LineOfCaller">248</td>
+<td class="Message">Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">20190813:12:48:54.331</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getTestExecutionListeners</td>
+<td class="LineOfCaller">177</td>
+<td class="Message">Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@503d687a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a370f4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2abf4075, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@770d3326, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4cc8eb05, org.springframework.test.context.transaction.TransactionalTestExecutionListener@51f116b8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@19d481b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1f97cf0d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@140c9f39, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4d910fd6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@26275bef, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7690781]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.333</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.333</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.344</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.345</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.346</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.347</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.347</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.347</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.352</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractDirtiesContextTestExecutionListener.java</td>
+<td class="MethodOfCaller">beforeOrAfterTestClass</td>
+<td class="LineOfCaller">142</td>
+<td class="Message">Before test class: context [DefaultTestContext@649bec2e testClass = SpringbootdemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@693fe6c9 testClass = SpringbootdemoApplicationTests, locations = &#39;{}&#39;, classes = &#39;{class com.java.SpringbootdemoApplication}&#39;, contextInitializerClasses = &#39;[]&#39;, activeProfiles = &#39;{}&#39;, propertySourceLocations = &#39;{}&#39;, propertySourceProperties = &#39;{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}&#39;, contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@17c1bced, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14ec4505, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13acb0d1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4f638935], resourceBasePath = &#39;src/main/webapp&#39;, contextLoader = &#39;org.springframework.boot.test.context.SpringBootContextLoader&#39;, parent = [null]], attributes = map[&#39;org.springframework.test.context.web.ServletTestExecutionListener.activateListener&#39; -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.353</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.353</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.373</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">TestPropertySourceUtils.java</td>
+<td class="MethodOfCaller">addInlinedPropertiesToEnvironment</td>
+<td class="LineOfCaller">245</td>
+<td class="Message">Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}</td>
+</tr>
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Tue Aug 13 12:48:54 CST 2019</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.549</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DeferredLog.java</td>
+<td class="MethodOfCaller">logTo</td>
+<td class="LineOfCaller">224</td>
+<td class="Message">Creating new Restarter for thread Thread[main,5,main]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.550</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ClasspathLoggingApplicationListener.java</td>
+<td class="MethodOfCaller">onApplicationEvent</td>
+<td class="LineOfCaller">56</td>
+<td class="Message">Application failed to start with classpath: [file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/lib/idea_rt.jar, file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/plugins/junit/lib/junit-rt.jar, file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/plugins/junit/lib/junit5-rt.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/charsets.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/deploy.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/access-bridge-64.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/cldrdata.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/dnsns.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/jaccess.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/jfxrt.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/localedata.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/nashorn.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunec.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunjce_provider.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunmscapi.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunpkcs11.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/zipfs.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/javaws.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jce.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jfr.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jfxswt.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jsse.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/management-agent.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/plugin.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/resources.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/rt.jar, file:/E:/idea/springbootdemo/target/test-classes/, file:/E:/idea/springbootdemo/target/classes/, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-devtools/2.1.1.RELEASE/spring-boot-devtools-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot/2.1.1.RELEASE/spring-boot-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-jdbc/2.1.1.RELEASE/spring-boot-starter-jdbc-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter/2.1.1.RELEASE/spring-boot-starter-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-logging/2.1.1.RELEASE/spring-boot-starter-logging-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar, file:/E:/JAVA/MavenCheyipai/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar, file:/E:/JAVA/MavenCheyipai/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar, file:/E:/JAVA/MavenCheyipai/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar, file:/E:/JAVA/MavenCheyipai/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-jdbc/5.1.3.RELEASE/spring-jdbc-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-tx/5.1.3.RELEASE/spring-tx-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-data-redis/2.1.1.RELEASE/spring-boot-starter-data-redis-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/data/spring-data-redis/2.1.3.RELEASE/spring-data-redis-2.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/data/spring-data-keyvalue/2.1.3.RELEASE/spring-data-keyvalue-2.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-oxm/5.1.3.RELEASE/spring-oxm-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-context-support/5.1.3.RELEASE/spring-context-support-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-web/2.1.1.RELEASE/spring-boot-starter-web-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-tomcat/2.1.1.RELEASE/spring-boot-starter-tomcat-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/apache/tomcat/embed/tomcat-embed-core/9.0.13/tomcat-embed-core-9.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/apache/tomcat/embed/tomcat-embed-el/9.0.13/tomcat-embed-el-9.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.13/tomcat-embed-websocket-9.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar, file:/E:/JAVA/MavenCheyipai/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar, file:/E:/JAVA/MavenCheyipai/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-expression/5.1.3.RELEASE/spring-expression-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-aop/2.1.1.RELEASE/spring-boot-starter-aop-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-aop/5.1.3.RELEASE/spring-aop-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/spring/boot/mybatis-spring-boot-starter/1.3.2/mybatis-spring-boot-starter-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/1.3.2/mybatis-spring-boot-autoconfigure-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-test/2.1.1.RELEASE/spring-boot-starter-test-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-test/2.1.1.RELEASE/spring-boot-test-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-test-autoconfigure/2.1.1.RELEASE/spring-boot-test-autoconfigure-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar, file:/E:/JAVA/MavenCheyipai/net/minidev/json-smart/2.3/json-smart-2.3.jar, file:/E:/JAVA/MavenCheyipai/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar, file:/E:/JAVA/MavenCheyipai/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, file:/E:/JAVA/MavenCheyipai/junit/junit/4.12/junit-4.12.jar, file:/E:/JAVA/MavenCheyipai/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar, file:/E:/JAVA/MavenCheyipai/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar, file:/E:/JAVA/MavenCheyipai/net/bytebuddy/byte-buddy/1.9.5/byte-buddy-1.9.5.jar, file:/E:/JAVA/MavenCheyipai/net/bytebuddy/byte-buddy-agent/1.9.5/byte-buddy-agent-1.9.5.jar, file:/E:/JAVA/MavenCheyipai/org/objenesis/objenesis/2.6/objenesis-2.6.jar, file:/E:/JAVA/MavenCheyipai/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/E:/JAVA/MavenCheyipai/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, file:/E:/JAVA/MavenCheyipai/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar, file:/E:/JAVA/MavenCheyipai/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-jcl/5.1.3.RELEASE/spring-jcl-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-test/5.1.3.RELEASE/spring-test-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar, file:/E:/JAVA/MavenCheyipai/com/alibaba/druid/1.1.12/druid-1.1.12.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-json/2.1.1.RELEASE/spring-boot-starter-json-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar, file:/E:/JAVA/MavenCheyipai/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar, file:/E:/JAVA/MavenCheyipai/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar, file:/E:/JAVA/MavenCheyipai/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar, file:/E:/JAVA/MavenCheyipai/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar, file:/E:/JAVA/MavenCheyipai/log4j/log4j/1.2.17/log4j-1.2.17.jar, file:/E:/JAVA/MavenCheyipai/javax/mail/mail/1.4.7/mail-1.4.7.jar, file:/E:/JAVA/MavenCheyipai/javax/activation/activation/1.1/activation-1.1.jar, file:/E:/JAVA/MavenCheyipai/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar, file:/E:/JAVA/MavenCheyipai/com/jcraft/jsch/0.1.53/jsch-0.1.53.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-thymeleaf/2.1.1.RELEASE/spring-boot-starter-thymeleaf-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.2.RELEASE/thymeleaf-extras-java8time-3.0.2.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, file:/E:/JAVA/MavenCheyipai/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, file:/E:/JAVA/MavenCheyipai/commons-lang/commons-lang/2.4/commons-lang-2.4.jar, file:/E:/JAVA/MavenCheyipai/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar, file:/E:/JAVA/MavenCheyipai/com/github/pagehelper/pagehelper/4.1.4/pagehelper-4.1.4.jar, file:/E:/JAVA/MavenCheyipai/com/github/jsqlparser/jsqlparser/0.9.5/jsqlparser-0.9.5.jar, file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/lib/idea_rt.jar]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.653</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ResourceBundleMessageInterpolator.java</td>
+<td class="MethodOfCaller">buildExpressionFactory</td>
+<td class="LineOfCaller">89</td>
+<td class="Message">Loaded expression factory via original TCCL</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.661</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">578</td>
+<td class="Message">HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.662</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">579</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.662</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">580</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:48:54.662</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">581</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:48:54.663</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">582</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.</td>
+</tr>
+
+<tr class="error even">
+<td class="Date">20190813:12:48:56.108</td>
+<td class="Thread">main</td>
+<td class="Level">ERROR</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="MethodOfCaller">reportFailure</td>
+<td class="LineOfCaller">858</td>
+<td class="Message">Application run failed</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@105:104 - no applicable action for [property], current ElementPath  is [[configuration][appender][encoder][layout][property]]
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:293)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:266)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:229)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+</td></tr>
+<tr class="error odd">
+<td class="Date">20190813:12:48:56.112</td>
+<td class="Thread">main</td>
+<td class="Level">ERROR</td>
+<td class="FileOfCaller">TestContextManager.java</td>
+<td class="MethodOfCaller">prepareTestInstance</td>
+<td class="LineOfCaller">250</td>
+<td class="Message">Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@503d687a] to prepare test instance [com.java.springbootdemo.SpringbootdemoApplicationTests@6e535154]</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.lang.IllegalStateException: Failed to load ApplicationContext
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+<br />Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@105:104 - no applicable action for [property], current ElementPath  is [[configuration][appender][encoder][layout][property]]
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:293)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:266)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:229)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 24 common frames omitted
+</td></tr>
+<tr class="debug even">
+<td class="Date">20190813:12:48:56.135</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractDirtiesContextTestExecutionListener.java</td>
+<td class="MethodOfCaller">beforeOrAfterTestClass</td>
+<td class="LineOfCaller">142</td>
+<td class="Message">After test class: context [DefaultTestContext@649bec2e testClass = SpringbootdemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@693fe6c9 testClass = SpringbootdemoApplicationTests, locations = &#39;{}&#39;, classes = &#39;{class com.java.SpringbootdemoApplication}&#39;, contextInitializerClasses = &#39;[]&#39;, activeProfiles = &#39;{}&#39;, propertySourceLocations = &#39;{}&#39;, propertySourceProperties = &#39;{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}&#39;, contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@17c1bced, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14ec4505, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13acb0d1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4f638935], resourceBasePath = &#39;src/main/webapp&#39;, contextLoader = &#39;org.springframework.boot.test.context.SpringBootContextLoader&#39;, parent = [null]], attributes = map[&#39;org.springframework.test.context.web.ServletTestExecutionListener.activateListener&#39; -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Tue Aug 13 12:54:37 CST 2019</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.271</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">SpringJUnit4ClassRunner.java</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">139</td>
+<td class="Message">SpringJUnit4ClassRunner constructor called with [class com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.277</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">BootstrapUtils.java</td>
+<td class="MethodOfCaller">createCacheAwareContextLoaderDelegate</td>
+<td class="LineOfCaller">96</td>
+<td class="Message">Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.284</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">BootstrapUtils.java</td>
+<td class="MethodOfCaller">createBootstrapContext</td>
+<td class="LineOfCaller">79</td>
+<td class="Message">Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.307</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">BootstrapUtils.java</td>
+<td class="MethodOfCaller">resolveTestContextBootstrapper</td>
+<td class="LineOfCaller">132</td>
+<td class="Message">Instantiating TestContextBootstrapper for test class [com.java.springbootdemo.SpringbootdemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">20190813:12:54:37.320</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">buildDefaultMergedContextConfiguration</td>
+<td class="LineOfCaller">308</td>
+<td class="Message">Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.java.springbootdemo.SpringbootdemoApplicationTests], using SpringBootContextLoader</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.324</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractContextLoader.java</td>
+<td class="MethodOfCaller">generateDefaultLocations</td>
+<td class="LineOfCaller">258</td>
+<td class="Message">Did not detect default resource location for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: class path resource [com/java/springbootdemo/SpringbootdemoApplicationTests-context.xml] does not exist</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.324</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractContextLoader.java</td>
+<td class="MethodOfCaller">generateDefaultLocations</td>
+<td class="LineOfCaller">258</td>
+<td class="Message">Did not detect default resource location for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: class path resource [com/java/springbootdemo/SpringbootdemoApplicationTestsContext.groovy] does not exist</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">20190813:12:54:37.325</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractContextLoader.java</td>
+<td class="MethodOfCaller">generateDefaultLocations</td>
+<td class="LineOfCaller">264</td>
+<td class="Message">Could not detect default resource locations for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">20190813:12:54:37.326</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AnnotationConfigContextLoaderUtils.java</td>
+<td class="MethodOfCaller">detectDefaultConfigurationClasses</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Could not detect default configuration classes for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]: SpringbootdemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.371</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ActiveProfilesUtils.java</td>
+<td class="MethodOfCaller">resolveActiveProfiles</td>
+<td class="LineOfCaller">79</td>
+<td class="Message">Could not find an &#39;annotation declaring class&#39; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.462</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ClassPathScanningCandidateComponentProvider.java</td>
+<td class="MethodOfCaller">scanCandidateComponents</td>
+<td class="LineOfCaller">437</td>
+<td class="Message">Identified candidate component class: file [E:\idea\springbootdemo\target\classes\com\java\SpringbootdemoApplication.class]</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">20190813:12:54:37.464</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">SpringBootTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getOrFindConfigurationClasses</td>
+<td class="LineOfCaller">247</td>
+<td class="Message">Found @SpringBootConfiguration com.java.SpringbootdemoApplication for test class com.java.springbootdemo.SpringbootdemoApplicationTests</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.579</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getTestExecutionListeners</td>
+<td class="LineOfCaller">125</td>
+<td class="Message">@TestExecutionListeners is not present for class [com.java.springbootdemo.SpringbootdemoApplicationTests]: using defaults.</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">20190813:12:54:37.580</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getDefaultTestExecutionListenerClassNames</td>
+<td class="LineOfCaller">248</td>
+<td class="Message">Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">20190813:12:54:37.596</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="FileOfCaller">AbstractTestContextBootstrapper.java</td>
+<td class="MethodOfCaller">getTestExecutionListeners</td>
+<td class="LineOfCaller">177</td>
+<td class="Message">Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@503d687a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a370f4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2abf4075, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@770d3326, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4cc8eb05, org.springframework.test.context.transaction.TransactionalTestExecutionListener@51f116b8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@19d481b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1f97cf0d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@140c9f39, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4d910fd6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@26275bef, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7690781]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.599</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.600</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.609</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.609</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.611</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.611</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.612</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.612</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.618</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractDirtiesContextTestExecutionListener.java</td>
+<td class="MethodOfCaller">beforeOrAfterTestClass</td>
+<td class="LineOfCaller">142</td>
+<td class="Message">Before test class: context [DefaultTestContext@649bec2e testClass = SpringbootdemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@693fe6c9 testClass = SpringbootdemoApplicationTests, locations = &#39;{}&#39;, classes = &#39;{class com.java.SpringbootdemoApplication}&#39;, contextInitializerClasses = &#39;[]&#39;, activeProfiles = &#39;{}&#39;, propertySourceLocations = &#39;{}&#39;, propertySourceProperties = &#39;{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}&#39;, contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@17c1bced, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14ec4505, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13acb0d1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4f638935], resourceBasePath = &#39;src/main/webapp&#39;, contextLoader = &#39;org.springframework.boot.test.context.SpringBootContextLoader&#39;, parent = [null]], attributes = map[&#39;org.springframework.test.context.web.ServletTestExecutionListener.activateListener&#39; -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.620</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">70</td>
+<td class="Message">Retrieved @ProfileValueSourceConfiguration [null] for test class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.620</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ProfileValueUtils.java</td>
+<td class="MethodOfCaller">retrieveProfileValueSource</td>
+<td class="LineOfCaller">83</td>
+<td class="Message">Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.java.springbootdemo.SpringbootdemoApplicationTests]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.640</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">TestPropertySourceUtils.java</td>
+<td class="MethodOfCaller">addInlinedPropertiesToEnvironment</td>
+<td class="LineOfCaller">245</td>
+<td class="Message">Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}</td>
+</tr>
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Tue Aug 13 12:54:37 CST 2019</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.829</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">DeferredLog.java</td>
+<td class="MethodOfCaller">logTo</td>
+<td class="LineOfCaller">224</td>
+<td class="Message">Creating new Restarter for thread Thread[main,5,main]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.830</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ClasspathLoggingApplicationListener.java</td>
+<td class="MethodOfCaller">onApplicationEvent</td>
+<td class="LineOfCaller">56</td>
+<td class="Message">Application failed to start with classpath: [file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/lib/idea_rt.jar, file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/plugins/junit/lib/junit-rt.jar, file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/plugins/junit/lib/junit5-rt.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/charsets.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/deploy.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/access-bridge-64.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/cldrdata.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/dnsns.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/jaccess.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/jfxrt.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/localedata.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/nashorn.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunec.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunjce_provider.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunmscapi.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/sunpkcs11.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/ext/zipfs.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/javaws.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jce.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jfr.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jfxswt.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/jsse.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/management-agent.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/plugin.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/resources.jar, file:/C:/Program%20Files/Java/jdk1.8.0_202/jre/lib/rt.jar, file:/E:/idea/springbootdemo/target/test-classes/, file:/E:/idea/springbootdemo/target/classes/, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-devtools/2.1.1.RELEASE/spring-boot-devtools-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot/2.1.1.RELEASE/spring-boot-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-autoconfigure/2.1.1.RELEASE/spring-boot-autoconfigure-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-jdbc/2.1.1.RELEASE/spring-boot-starter-jdbc-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter/2.1.1.RELEASE/spring-boot-starter-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-logging/2.1.1.RELEASE/spring-boot-starter-logging-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar, file:/E:/JAVA/MavenCheyipai/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar, file:/E:/JAVA/MavenCheyipai/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar, file:/E:/JAVA/MavenCheyipai/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar, file:/E:/JAVA/MavenCheyipai/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-jdbc/5.1.3.RELEASE/spring-jdbc-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-tx/5.1.3.RELEASE/spring-tx-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-data-redis/2.1.1.RELEASE/spring-boot-starter-data-redis-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/data/spring-data-redis/2.1.3.RELEASE/spring-data-redis-2.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/data/spring-data-keyvalue/2.1.3.RELEASE/spring-data-keyvalue-2.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/data/spring-data-commons/2.1.3.RELEASE/spring-data-commons-2.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-oxm/5.1.3.RELEASE/spring-oxm-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-context-support/5.1.3.RELEASE/spring-context-support-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/io/lettuce/lettuce-core/5.1.3.RELEASE/lettuce-core-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/io/projectreactor/reactor-core/3.2.3.RELEASE/reactor-core-3.2.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-common/4.1.31.Final/netty-common-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-transport/4.1.31.Final/netty-transport-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-buffer/4.1.31.Final/netty-buffer-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-resolver/4.1.31.Final/netty-resolver-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-handler/4.1.31.Final/netty-handler-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/io/netty/netty-codec/4.1.31.Final/netty-codec-4.1.31.Final.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-web/2.1.1.RELEASE/spring-boot-starter-web-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-tomcat/2.1.1.RELEASE/spring-boot-starter-tomcat-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/apache/tomcat/embed/tomcat-embed-core/9.0.13/tomcat-embed-core-9.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/apache/tomcat/embed/tomcat-embed-el/9.0.13/tomcat-embed-el-9.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.13/tomcat-embed-websocket-9.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar, file:/E:/JAVA/MavenCheyipai/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar, file:/E:/JAVA/MavenCheyipai/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-expression/5.1.3.RELEASE/spring-expression-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-aop/2.1.1.RELEASE/spring-boot-starter-aop-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-aop/5.1.3.RELEASE/spring-aop-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/spring/boot/mybatis-spring-boot-starter/1.3.2/mybatis-spring-boot-starter-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/1.3.2/mybatis-spring-boot-autoconfigure-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar, file:/E:/JAVA/MavenCheyipai/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar, file:/E:/JAVA/MavenCheyipai/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-test/2.1.1.RELEASE/spring-boot-starter-test-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-test/2.1.1.RELEASE/spring-boot-test-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-test-autoconfigure/2.1.1.RELEASE/spring-boot-test-autoconfigure-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar, file:/E:/JAVA/MavenCheyipai/net/minidev/json-smart/2.3/json-smart-2.3.jar, file:/E:/JAVA/MavenCheyipai/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar, file:/E:/JAVA/MavenCheyipai/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, file:/E:/JAVA/MavenCheyipai/junit/junit/4.12/junit-4.12.jar, file:/E:/JAVA/MavenCheyipai/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar, file:/E:/JAVA/MavenCheyipai/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar, file:/E:/JAVA/MavenCheyipai/net/bytebuddy/byte-buddy/1.9.5/byte-buddy-1.9.5.jar, file:/E:/JAVA/MavenCheyipai/net/bytebuddy/byte-buddy-agent/1.9.5/byte-buddy-agent-1.9.5.jar, file:/E:/JAVA/MavenCheyipai/org/objenesis/objenesis/2.6/objenesis-2.6.jar, file:/E:/JAVA/MavenCheyipai/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/E:/JAVA/MavenCheyipai/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, file:/E:/JAVA/MavenCheyipai/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar, file:/E:/JAVA/MavenCheyipai/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-jcl/5.1.3.RELEASE/spring-jcl-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/spring-test/5.1.3.RELEASE/spring-test-5.1.3.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar, file:/E:/JAVA/MavenCheyipai/com/alibaba/druid/1.1.12/druid-1.1.12.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-json/2.1.1.RELEASE/spring-boot-starter-json-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar, file:/E:/JAVA/MavenCheyipai/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar, file:/E:/JAVA/MavenCheyipai/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar, file:/E:/JAVA/MavenCheyipai/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar, file:/E:/JAVA/MavenCheyipai/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar, file:/E:/JAVA/MavenCheyipai/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar, file:/E:/JAVA/MavenCheyipai/log4j/log4j/1.2.17/log4j-1.2.17.jar, file:/E:/JAVA/MavenCheyipai/javax/mail/mail/1.4.7/mail-1.4.7.jar, file:/E:/JAVA/MavenCheyipai/javax/activation/activation/1.1/activation-1.1.jar, file:/E:/JAVA/MavenCheyipai/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar, file:/E:/JAVA/MavenCheyipai/com/jcraft/jsch/0.1.53/jsch-0.1.53.jar, file:/E:/JAVA/MavenCheyipai/org/springframework/boot/spring-boot-starter-thymeleaf/2.1.1.RELEASE/spring-boot-starter-thymeleaf-2.1.1.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.2.RELEASE/thymeleaf-extras-java8time-3.0.2.RELEASE.jar, file:/E:/JAVA/MavenCheyipai/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, file:/E:/JAVA/MavenCheyipai/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, file:/E:/JAVA/MavenCheyipai/commons-lang/commons-lang/2.4/commons-lang-2.4.jar, file:/E:/JAVA/MavenCheyipai/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar, file:/E:/JAVA/MavenCheyipai/com/github/pagehelper/pagehelper/4.1.4/pagehelper-4.1.4.jar, file:/E:/JAVA/MavenCheyipai/com/github/jsqlparser/jsqlparser/0.9.5/jsqlparser-0.9.5.jar, file:/D:/workSoftware/idea/IntelliJ%20IDEA%202017.3/lib/idea_rt.jar]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.943</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ResourceBundleMessageInterpolator.java</td>
+<td class="MethodOfCaller">buildExpressionFactory</td>
+<td class="LineOfCaller">89</td>
+<td class="Message">Loaded expression factory via original TCCL</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.951</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">578</td>
+<td class="Message">HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.951</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">579</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.951</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">580</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">20190813:12:54:37.952</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">581</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">20190813:12:54:37.952</td>
+<td class="Thread">background-preinit</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">ValidatorFactoryImpl.java</td>
+<td class="MethodOfCaller">logValidatorFactoryScopedConfiguration</td>
+<td class="LineOfCaller">582</td>
+<td class="Message">HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.</td>
+</tr>
+
+<tr class="error even">
+<td class="Date">20190813:12:54:39.403</td>
+<td class="Thread">main</td>
+<td class="Level">ERROR</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="MethodOfCaller">reportFailure</td>
+<td class="LineOfCaller">858</td>
+<td class="Message">Application run failed</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@105:104 - no applicable action for [property], current ElementPath  is [[configuration][appender][encoder][layout][property]]
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:293)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:266)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:229)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+</td></tr>
+<tr class="error odd">
+<td class="Date">20190813:12:54:39.411</td>
+<td class="Thread">main</td>
+<td class="Level">ERROR</td>
+<td class="FileOfCaller">TestContextManager.java</td>
+<td class="MethodOfCaller">prepareTestInstance</td>
+<td class="LineOfCaller">250</td>
+<td class="Message">Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@503d687a] to prepare test instance [com.java.springbootdemo.SpringbootdemoApplicationTests@6e535154]</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.lang.IllegalStateException: Failed to load ApplicationContext
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+<br />Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@105:104 - no applicable action for [property], current ElementPath  is [[configuration][appender][encoder][layout][property]]
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:293)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:266)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:229)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 24 common frames omitted
+</td></tr>
+<tr class="debug even">
+<td class="Date">20190813:12:54:39.427</td>
+<td class="Thread">main</td>
+<td class="Level">DEBUG</td>
+<td class="FileOfCaller">AbstractDirtiesContextTestExecutionListener.java</td>
+<td class="MethodOfCaller">beforeOrAfterTestClass</td>
+<td class="LineOfCaller">142</td>
+<td class="Message">After test class: context [DefaultTestContext@649bec2e testClass = SpringbootdemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@693fe6c9 testClass = SpringbootdemoApplicationTests, locations = &#39;{}&#39;, classes = &#39;{class com.java.SpringbootdemoApplication}&#39;, contextInitializerClasses = &#39;[]&#39;, activeProfiles = &#39;{}&#39;, propertySourceLocations = &#39;{}&#39;, propertySourceProperties = &#39;{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}&#39;, contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@17c1bced, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14ec4505, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13acb0d1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4f638935], resourceBasePath = &#39;src/main/webapp&#39;, contextLoader = &#39;org.springframework.boot.test.context.SpringBootContextLoader&#39;, parent = [null]], attributes = map[&#39;org.springframework.test.context.web.ServletTestExecutionListener.activateListener&#39; -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].</td>
+</tr>

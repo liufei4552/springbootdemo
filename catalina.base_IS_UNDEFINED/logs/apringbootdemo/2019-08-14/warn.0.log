@@ -1,0 +1,2 @@
+[WARN ] 2019-08-14 10:33:59 [http-nio-8080-exec-3] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'page' is not present]
+[WARN ] 2019-08-14 10:33:59 [http-nio-8080-exec-1] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'page' is not present]
