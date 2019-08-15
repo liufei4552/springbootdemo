@@ -32,8 +32,9 @@ public class RedisKeyUtil {
                 for (String a : arg.split(":")) {
                     key.append(KEY_SPLIT_CHAR).append(a);
                 }
-            } else
+            } else {
                 key.append(KEY_SPLIT_CHAR).append(arg);
+            }
         }
         return key.toString();
     }

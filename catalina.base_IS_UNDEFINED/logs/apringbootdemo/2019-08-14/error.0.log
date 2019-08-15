@@ -1090,3 +1090,4 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [swagg
 [ERROR] 2019-08-14 17:06:25 [main] c.alibaba.druid.filter.FilterManager - load filter error, filter not found : logback
 [ERROR] 2019-08-14 17:30:31 [main] c.alibaba.druid.filter.FilterManager - load filter error, filter not found : logback
 [ERROR] 2019-08-14 17:31:23 [restartedMain] c.alibaba.druid.filter.FilterManager - load filter error, filter not found : logback
+[ERROR] 2019-08-14 18:15:22 [restartedMain] c.alibaba.druid.filter.FilterManager - load filter error, filter not found : logback

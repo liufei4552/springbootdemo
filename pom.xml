@@ -199,11 +199,6 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${springfox-swagger2-ui.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.java</groupId>
-            <artifactId>springbootdemo</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <build>
