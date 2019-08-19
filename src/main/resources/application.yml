@@ -47,7 +47,12 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-
+#   配置MongoDB
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: runoob
 #   mybatis 相关配置
 mybatis:
   config-location: classpath:mybatis-config.xml

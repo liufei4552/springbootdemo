@@ -126,11 +126,11 @@
             <classifier>jdk15</classifier>
         </dependency>
         <!-- Log4j依赖-->
-       <!-- <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>-->
+        <!-- <dependency>
+             <groupId>log4j</groupId>
+             <artifactId>log4j</artifactId>
+             <version>${log4j.version}</version>
+         </dependency>-->
         <!--邮件需要-->
         <dependency>
             <groupId>javax.mail</groupId>
@@ -198,6 +198,11 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${springfox-swagger2-ui.version}</version>
+        </dependency>
+        <!--MongoDB数据库-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
     </dependencies>
 

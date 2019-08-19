@@ -101,6 +101,17 @@
             </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
     </appender>
+    <!--MongoDB设置防止debug时一直刷-->
+    <logger name="org.mongodb.driver.cluster" level="INFO"></logger>
+    <logger name="org.mongodb.driver.connection" level="INFO"></logger>
+    <logger name="org.mongodb.driver.protocol.insert" level="INFO"></logger>
+    <logger name="org.mongodb.driver.protocol.update" level="INFO"></logger>
+    <logger name="org.mongodb.driver.protocol.delete" level="INFO"></logger>
+    <logger name="org.mongodb.driver.protocol.update" level="INFO"></logger>
+    <logger name="org.mongodb.driver.protocol.getmore" level="INFO"></logger>
+    <logger name="org.mongodb.driver.protocol.command" level="INFO"></logger>
+    <logger name="org.mongodb.driver.protocol.uri" level="INFO"></logger>
+    <logger name="org.mongodb.driver.protocol.management" level="INFO"></logger>
     <!-- Logger 根目录 -->
     <root level="DEBUG">
         <appender-ref ref="STDOUT" />
