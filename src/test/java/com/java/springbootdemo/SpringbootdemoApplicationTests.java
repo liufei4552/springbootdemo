@@ -1,11 +1,10 @@
 package com.java.springbootdemo;
 
 import com.github.pagehelper.PageHelper;
+import com.java.annotation.RedisCache;
 import com.java.bean.User;
 import com.java.dao.UserDao;
 import com.java.repository.StudentDao;
-import com.java.service.UserService;
-import com.java.utils.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,11 +20,18 @@ import java.util.List;
 public class SpringbootdemoApplicationTests {
     @Autowired
     private StudentDao studentDao;
+    @Autowired
+    private UserDao userDao;
 
     @Test
     public void contextLoads() {
         studentDao.delete("1");
     }
 
+    @Test
+    public void test() {
+        com.github.pagehelper.Page page = PageHelper.startPage(1, 5);
+        List<User> list = userDao.findAll();
+    }
 }
 

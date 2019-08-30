@@ -2,6 +2,9 @@ package com.java.service.impl;
 
 import com.java.bean.User;
 import com.java.service.UserService;
+import com.java.utils.JSONUtil;
+import com.java.utils.Page;
+import com.java.utils.Result;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +33,8 @@ public class UserServiceImplTest {
 	private UserService service;
 	@Test
 	public void findAll() {
-
+		Result<Page<User>> result=service.findAll(1,10);
+		System.out.println(JSONUtil.toJSONString(result));
 	}
 
 	@Test

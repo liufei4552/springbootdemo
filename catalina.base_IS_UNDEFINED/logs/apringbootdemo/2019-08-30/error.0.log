@@ -1,0 +1,1 @@
+[ERROR] 2019-08-30 14:09:14 [restartedMain] c.alibaba.druid.filter.FilterManager - load filter error, filter not found : logback
