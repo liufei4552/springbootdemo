@@ -11,11 +11,13 @@ spring:
   # Redis服务器连接端口
     port: 6379
   # Redis服务器连接密码（默认为空）
-    password:
+    password: 123456
     jedis:
       pool:
         max-active: 10
         min-idle: 2
+        max-idle: 10
+        max-wait: 10000
   # 连接超时时间（毫秒）
     timeout: 1000
 

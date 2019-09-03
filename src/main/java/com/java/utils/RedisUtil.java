@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
 
 import java.util.List;
 import java.util.Map;
@@ -23,6 +25,67 @@ import java.util.concurrent.TimeUnit;
 public class RedisUtil {
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
+    @Autowired
+    private JedisPool jedisPool;
+
+    /**
+     * 存储序列化的文件
+     *
+     * @param key
+     * @param value
+     * @return
+     */
+    public boolean set(byte[] key, byte[] value) {
+        Jedis jedis=jedisPool.getResource();
+        try {
+            jedis.set(key, value);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }finally {
+            jedis.close();
+        }
+    }
+
+    /**
+     * 存储序列化的文件且设置过期时间
+     *
+     * @param key
+     * @param value
+     * @return
+     */
+    public boolean set(byte[] key, byte[] value, Integer time) {
+        Jedis jedis=jedisPool.getResource();
+        try {
+            jedis.set(key, value);
+            jedis.expire(key,time);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }finally {
+            jedis.close();
+        }
+    }
+
+    /**
+     * 获取序列化的文件
+     *
+     * @param key
+     * @return
+     */
+    public byte[] get(byte[] key) {
+        Jedis jedis=jedisPool.getResource();
+        try {
+            return jedis.get(key);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }finally {
+            jedis.close();
+        }
+    }
 
     /**
      * 指定缓存失效时间
