@@ -13,6 +13,6 @@
     </select>
     <!--用户登录-->
     <select id="login" resultType="int">
-        SELECT count(*) FROM user WHERE username=#{arg0} AND password=#{arg1}
+        SELECT count(*) FROM user WHERE username=#{name} AND password=#{pass}
     </select>
 </mapper>
