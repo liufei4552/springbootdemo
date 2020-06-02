@@ -30,7 +30,7 @@ public class WebConfigurer implements WebMvcConfigurer{
 		System.out.println("开始添加自定义的拦截器................");
 		// addPathPatterns("/**") 表示拦截所有的请求，
 		// excludePathPatterns("/login", "/register") 表示除了登陆与注册之外，因为登陆注册不需要登陆也可以访问
-		registry.addInterceptor(myInterceptor).addPathPatterns("/**").excludePathPatterns( "/login","/user/userLogin","/register","/swagger-resources/**");
+		//registry.addInterceptor(myInterceptor).addPathPatterns("/**").excludePathPatterns( "/login","/user/userLogin","/register");
 		System.out.println("添加自定义的拦截器完成..................");
 	}
 	/**

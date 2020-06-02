@@ -14,7 +14,7 @@ spring:
     proxy-target-class: true
     auto: true
   mvc:
-    static-path-pattern: /statics/**
+    static-path-pattern: /*
   thymeleaf:
     prefix: classpath:/templates/
 #   mybatis 相关配置

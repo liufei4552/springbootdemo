@@ -53,7 +53,6 @@ public class ShiroConfig {
         filterMap.put("/ticket/inventory/merchantInventoryExcel", "anon");
         filterMap.put("/auth/**", "anon");
 
-
         filterMap.put("/swagger-ui.html", "anon");
         filterMap.put("/webjars/**", "anon");
         filterMap.put("/v2/**", "anon");
