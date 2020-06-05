@@ -3,16 +3,12 @@ package com.java.jobhandler;
 import com.xxl.job.core.biz.model.ReturnT;
 import com.xxl.job.core.handler.IJobHandler;
 import com.xxl.job.core.handler.annotation.JobHandler;
-import com.xxl.job.core.log.XxlJobLogger;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
-import java.util.List;
 
 /**
 * 功能描述: 代叫车自动扣款
@@ -24,6 +20,7 @@ import java.util.List;
 @JobHandler(value="RideUpdateAutoPayHandler")
 @Component
 @Slf4j
+@Configuration
 public class RideUpdateAutoPayHandler extends IJobHandler {
     /*@Autowired
     private PayService payService;

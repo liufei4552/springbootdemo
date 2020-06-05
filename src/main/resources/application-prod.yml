@@ -47,8 +47,8 @@ spring:
       port: 27017
       database: runoob
 xxl-job:
-  adminAddress: http://127.0.0.1:5020/cts-job
-  executorAppname: cts-manageserver
+  adminAddress: http://127.0.0.1:8888/xxl-job
+  executorAppname: springbootdemo
   executorIp: 127.0.0.1
   executorPort: 9998
   executorLogpathogpath:

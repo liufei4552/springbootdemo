@@ -61,7 +61,7 @@
         <!--shiro-->
         <shiro.version>1.5.3</shiro.version>
         <!--任务调度-->
-        <xxl-job.version>2.1.2</xxl-job.version>
+        <xxl-job.version>2.1.0</xxl-job.version>
     </properties>
 
     <dependencies>
@@ -102,6 +102,11 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
         <!--引入了Spring Boot默认的HTTP引擎Tomcat-->
         <!--<dependency>
@@ -340,7 +345,7 @@
     </build>
     <!--上线打包-->
     <!--<build>
-        <finalName>cts-manageweb-1.0-SNAPSHOT</finalName>
+        <finalName>springbootdemo-1.0-SNAPSHOT</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -402,11 +407,11 @@
                 <filtering>true</filtering>
                 <directory>src/main/resources</directory>
                 <excludes>
-                    <exclude>**/*.yml</exclude>
+                    &lt;!&ndash;<exclude>**/*.yml</exclude>
                     <exclude>**/*.properties</exclude>
                     <exclude>**/*.xml</exclude>
                     <exclude>mapper/**</exclude>
-                    <exclude>**/*.sql</exclude>
+                    <exclude>**/*.sql</exclude>&ndash;&gt;
                 </excludes>
             </resource>
         </resources>

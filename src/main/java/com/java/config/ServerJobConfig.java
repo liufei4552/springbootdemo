@@ -6,6 +6,7 @@ import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -20,7 +21,7 @@ import org.springframework.context.annotation.Configuration;
 @Data
 @Configuration
 @ConfigurationProperties(prefix = "xxl-job")
-@ComponentScan(basePackages = "com.ultrapower.ctsmanageserver.common.jobhandler")
+@ComponentScan(basePackages = "com.java.jobhandler")
 public class ServerJobConfig {
     private Logger logger = LoggerFactory.getLogger(ServerJobConfig.class);
     private String adminAddress;
@@ -31,7 +32,7 @@ public class ServerJobConfig {
     private String executorLogpathogpath;
     private int executorLogretentiondays;
 
-    //@Bean(initMethod = "start", destroyMethod = "destroy")
+    @Bean(initMethod = "start", destroyMethod = "destroy")
     public XxlJobSpringExecutor xxlJobExecutor() {
         logger.info(">>>>>>>>>>> xxl-job config init.");
         XxlJobSpringExecutor xxlJobSpringExecutor = new XxlJobSpringExecutor();
