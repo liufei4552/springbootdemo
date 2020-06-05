@@ -8,7 +8,7 @@
     <!-- 控制台打印 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger{36} - %m%n</pattern>
+            <pattern>%d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
     <!-- ERROR 输入到文件，按日期和文件大小 -->
@@ -113,7 +113,7 @@
     <logger name="org.mongodb.driver.protocol.uri" level="INFO"></logger>
     <logger name="org.mongodb.driver.protocol.management" level="INFO"></logger>
     <!-- Logger 根目录 -->
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="STDOUT" />
         <appender-ref ref="ERROR-OUT" />
         <appender-ref ref="WARN-OUT" />

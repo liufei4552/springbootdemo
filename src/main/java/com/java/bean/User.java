@@ -1,5 +1,7 @@
 package com.java.bean;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
@@ -11,6 +13,7 @@ import java.io.Serializable;
  * @Date: 2018/12/21 14:33
  * @Version: 1.0
  */
+@Data
 public class User implements Serializable{
 	/**
 	 * 索引

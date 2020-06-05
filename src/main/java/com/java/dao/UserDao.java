@@ -1,6 +1,7 @@
 package com.java.dao;
 
 import com.java.bean.User;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -41,5 +42,5 @@ public interface UserDao {
      * @Date 16:07 2018/12/21
      * @Param [name, pass]
      **/
-    public int login(String name, String pass);
+    public int login(@Param("name") String name,@Param("pass") String pass);
 }

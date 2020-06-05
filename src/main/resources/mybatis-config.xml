@@ -14,12 +14,15 @@
         <!--  对于未知的SQL查询，允许返回不同的结果集以达到通用的效果 -->
         <setting name="multipleResultSetsEnabled" value="true"/>
 
+        <!--返回值自动转为驼峰式-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+
         <!-- 设置关联对象加载的形态，此处为按需加载字段(加载字段由SQL指 定)，不会加载关联表的所有字段，以提高性能 -->
         <setting name="aggressiveLazyLoading" value="true"/>
         <!-- 链路监控慢sql超时时间 -->
-        <!-- <setting name="slowSqlTimeout" value="1000"/>-->
+         <!--<setting name="slowSqlTimeout" value="1000"/>-->
         <!-- 配置此项时，logback设置为debug时可以查看sql语句 -->
-        <!--<setting name="logImpl" value="STDOUT_LOGGING"/>-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
     </settings>
     <!-- 分页插件 end-->
     <plugins>

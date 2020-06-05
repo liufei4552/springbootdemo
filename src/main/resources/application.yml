@@ -3,63 +3,35 @@ server:
   port: 8080
 #: 数据库访问配置
 spring:
-  redis:
-  # Redis数据库索引（默认为0）
-    database: 0
-  # Redis服务器地址
-    host: 127.0.0.1
-  # Redis服务器连接端口
-    port: 6379
-  # Redis服务器连接密码（默认为空）
-    password: 123456
-    jedis:
-      pool:
-        max-active: 10
-        min-idle: 2
-        max-idle: 10
-        max-wait: 10000
-  # 连接超时时间（毫秒）
-    timeout: 1000
-
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+  aop:
+    proxy-target-class: true
+    auto: true
   mvc:
     static-path-pattern: /*
   thymeleaf:
     prefix: classpath:/templates/
-  datasource:
-#   数据源基本配置
-    username: root
-    password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ssm?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&serverTimezone=UTC
-    type: com.alibaba.druid.pool.DruidDataSource
-#   数据源其他配置
-    initialSize: 5
-    minIdle: 5
-    maxActive: 20
-    maxWait: 60000
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 300000
-    validationQuery: SELECT 1 FROM DUAL
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-    poolPreparedStatements: true
-#   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
-    filters: stat,wall,logback
-    maxPoolPreparedStatementPerConnectionSize: 20
-    useGlobalDataSourceStat: true
-    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-#   配置MongoDB
-  data:
-    mongodb:
-      host: 127.0.0.1
-      port: 27017
-      database: runoob
 #   mybatis 相关配置
 mybatis:
-  config-location: classpath:mybatis-config.xml
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.java.bean
+  #xml和configyration只能选择其一种
+  config-location: classpath:mybatis-config.xml
+  #configuration:
+    #map返回值自动变为驼峰式
+    #map-underscore-to-camel-case: true
+    #打印sql语句
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+shiro:
+  redisOpen: false  # 是否开启redis缓存  true开启   false关闭
+  shiroRedis: false # true表示shiro session存到redis里，需要开启redis，才会生效【分布式场景】
+  sessionTimeOut: 18000000 #毫秒
 #  swagger
 swagger:
   show: true
