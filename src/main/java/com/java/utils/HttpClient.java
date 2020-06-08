@@ -166,9 +166,12 @@ public class HttpClient {
 	public static void main(String[] args) {
 		//String resMessage=HttpClient.get("http://localhost:3000/hello?hello=hello get");
 
-		String str=HttpClient.sendPost("http://119.57.115.6:8088/interface_decai/interface_recieve.php","cmd=2001&msg=<?xml \n" +
-				"\n" +
-				" version=\"1.0\" urlencode=\"UTF-8\"?><msg v=\"1.0\" id=\"824793057391022080\"><head><agentid>800151</agentid><cmd>2001</cmd><timestamp>20180522152817</timestamp><cipher>dc1b93ac686c4505c010e9386d187922</cipher></head><body><order lotteryid=\"201\" issue=\"2018058\"><ticket seq=\"824792948087459840\">01_01_01,02,03,04,05,06#10_1_200</ticket></order></body></msg>&inf=jm001\n");
+		String str= null;
+		try {
+			str = HttpClient.get("https://kyfw.12306.cn/otn/resources/js/query/train_list.js?scriptVersion=1.0");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		System.out.println(str);
 		//Gson gson=new Gson();
 		//System.out.println(gson.toJson(str));
