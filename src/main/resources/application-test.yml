@@ -54,3 +54,7 @@ xxl-job:
   executorLogpathogpath:
   executorLogretentiondays: -1
   accessToken:
+redisson:
+  address: localhost:6379
+  single: true
+  sentinel: false
