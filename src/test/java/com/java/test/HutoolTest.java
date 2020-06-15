@@ -1,10 +1,13 @@
 package com.java.test;
 
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.lang.Snowflake;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.crypto.SecureUtil;
+import cn.hutool.extra.mail.MailAccount;
+import cn.hutool.extra.mail.MailUtil;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Calendar;
@@ -75,5 +78,27 @@ public class HutoolTest {
         Snowflake snowflake = IdUtil.createSnowflake(1, 1);
         long id2 = snowflake.nextId();
         log.info("{}",id2);
+
+        //邮件发送测试
+        MailAccount account = new MailAccount();
+        account.setHost("smtp.qq.com");
+        account.setPort(25);
+        account.setAuth(true);
+        account.setFrom("304265966@qq.com");
+        account.setUser("304265966@qq.com");
+        account.setPass("bdascnmkpezhbgej");
+
+        MailUtil.send(account, CollUtil.newArrayList("304265966@qq.com"), "测试", "邮件来自Hutool测试", false);
+        //企业邮箱
+        //邮件发送测试
+        MailAccount account1 = new MailAccount();
+        account1.setHost("smtp.exmail.qq.com");
+        account1.setPort(25);
+        account1.setAuth(true);
+        account1.setFrom("ota@roamwifi.com");
+        account1.setUser("ota@roamwifi.com");
+        account1.setPass("Roam.190730123@#");
+
+        MailUtil.send(account, CollUtil.newArrayList("304265966@qq.com"), "测试", "邮件来自Hutool测试", false);
     }
 }
