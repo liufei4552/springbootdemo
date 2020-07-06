@@ -13,4 +13,5 @@
 ### 10、继承了shiro
 ### 11、集成了分布式任务调度平台XXL-JOB）
 ### 12、集成了websocket
+#项目转移到https://github.com/liufei4552/springbootparent.git
 自己会持续更新。。。。。。。。。。
