@@ -59,7 +59,7 @@
         <!--websocket-->
         <spring-websocket.version>5.1.6.RELEASE</spring-websocket.version>
         <!--shiro-->
-        <shiro.version>1.5.3</shiro.version>
+        <shiro.version>1.8.0</shiro.version>
         <!--任务调度-->
         <xxl-job.version>2.1.0</xxl-job.version>
         <!--redisson-->
