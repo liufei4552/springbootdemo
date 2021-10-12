@@ -61,7 +61,7 @@
         <!--shiro-->
         <shiro.version>1.5.3</shiro.version>
         <!--任务调度-->
-        <xxl-job.version>2.1.0</xxl-job.version>
+        <xxl-job.version>2.3.0</xxl-job.version>
         <!--redisson-->
         <redisson-version>3.3.2</redisson-version>
         <!--hutool-->
